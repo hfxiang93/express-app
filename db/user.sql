@@ -1,0 +1,13 @@
+INSERT INTO `user` VALUES (1, 'admin', '123', '梦轩', '男', '18895356985', '1995-8-3', '自由职业者', '安徽合肥', 'code.jpg', '1');
+INSERT INTO `user` VALUES (2, 'roman', '123456', '安仔', '男', '18895356985', '1995-1-2', '自由职业者', '安徽芜湖', '123.jpg', '1');
+INSERT INTO `user` VALUES (3, 'jyy123', 'md5(jyy123)', '媛媛	', '女', '13513456789', '2018-5-1', '学生', '安徽', '1.jpg', '');
+INSERT INTO `user` VALUES (7, 'hahaha', 'hahaha', '皮皮', '男', '13513456789', '2018-5-14', '学生', '芜湖', '011.png', '');
+INSERT INTO `user` VALUES (25, 'x11111', 'x11111', '皮皮				', '男', '13513456789', '2018-4-30', '学生', '芜湖', '011.png', '');
+INSERT INTO `user` VALUES (26, 'roman', '159357', '梦轩', '', '18895356985', '0000-0-0', '', '', '', '');
+INSERT INTO `user` VALUES (27, 'b123456', 'b123456', '小明	', '男', '13513456789', '2018-5-24', '学生', '芜湖', 'IMG_0675.JPG', '');
+INSERT INTO `user` VALUES (28, 'hahaha', '101a6ec9f938885df0a44f20458d2eb4', 'javascript', '', '', '0000-0-0', '', '', '2.jpg', '');
+INSERT INTO `user` VALUES (29, '', '', 'nodejs', 'man', '', '0000-0-0', '', '', '', '');
+INSERT INTO `user` VALUES (31, '', '', 'typescript', 'women', '', '0000-0-0', '', '', '', '');
+INSERT INTO `user` VALUES (34, '', '', 'typescript1', 'women', '', '0000-0-0', '', '', '', '');
+INSERT INTO `user` VALUES (38, '', '', 'html', 'women', '', '0000-0-0', '', '', '', '');
+INSERT INTO `user` VALUES (39, '', '', 'typescript3', 'women', '', '0000-0-0', '', '', '', '');
