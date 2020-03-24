@@ -5,6 +5,43 @@ const router = express.Router()
 
 //写接口
 /**
+ * @interface  /login  用户登录
+ * @methods POST
+ */
+router.post('/login', function(req, res, next) {
+    let params = req.body
+	let sql=`select * from user where zh = '${params.userName}'` //写sql语句
+	db.query(sql, function(err, rows) {   //从数据库查询
+		if(err) {
+			var data = {
+				code: -1,
+				data: null,
+				msg: err
+            }
+            res.json(data)  //返回查询结果
+		} else {
+            if(rows[0] && rows[0].mm === params.password){
+                var data = {
+                    code: 0,
+                    data: rows,
+                    type: "account",
+                    currentAuthority: "admin",
+                    status: "ok",
+                    msg: 'ok'
+                }
+            }else{
+                var data = {
+                    code: 0,
+                    data: null,
+                    msg: '账号或密码错误'
+                }
+            }
+			
+		}
+		res.json(data)  //返回查询结果
+	})
+}),
+/**
  * @interface  /list  用户列表
  * @methods GET
  */
